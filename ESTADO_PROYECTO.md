@@ -1,7 +1,7 @@
 # Estado del proyecto
 
 - **Fecha:** 2026-07-23
-- **Fase actual:** plantilla única y contratos comunes de agentes
+- **Fase actual:** definición documental de agentes de Gobierno
 - **Estado:** `DEFINIDO`
 - **Fuente:** `DOCUMENTACION_FUENTE/arquitectura-editorial-ia-v2.docx`
 - **Responsable de aprobación:** responsable humano
@@ -20,6 +20,10 @@
 - Plantilla única de agentes y seis contratos/plantillas comunes desarrollados.
 - Decisión registrada en `ADR-0002`.
 - Pruebas documentales de completitud definidas.
+- Seis perfiles de Gobierno desarrollados conforme a la plantilla oficial.
+- Votación del Consejo, matriz de consolidación y conservación de GR-1 a GR-4 definidas.
+- Esquema JSON, checklist, cinco ejemplos y pruebas documentales de votación añadidos.
+- Decisión de consolidación registrada en `ADR-0003`.
 
 ## No implementado
 
@@ -34,10 +38,10 @@
 
 - Incorporar el contenido heredado de v1.0.
 - Confirmar 41 roles conceptuales frente a 44 perfiles ejecutables.
-- Resolver la posición de GR-1 y la consolidación de votos.
+- Resolver la posición exacta de GR-1.
 - Unificar la convención de nombres.
 - Elegir la licencia.
 
 ## Próxima fase autorizable
 
-Definición documental de los agentes de Gobierno. No iniciada.
+Proyecto piloto documental `PID-PILOTO-001`. No iniciado.

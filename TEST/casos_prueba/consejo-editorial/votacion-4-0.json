@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "simulation": true,
+  "convocation_id": "CONV-4-0",
+  "project_id": "PID-20260723-T001",
+  "dossier_ref": "EJEMPLO/dossier-v1",
+  "dossier_hash": "sha256:ejemplo-4-0",
+  "gate": "GR-1",
+  "votes": {
+    "GOB-02a": { "vote": "APROBAR", "justification": "Cumple el criterio editorial simulado.", "norm_refs": ["MANUAL/CODIGOS/CODIGO_ESTILO.md"], "issued_at": "2026-07-23T12:00:00Z", "sealed": true, "saw_other_votes": false },
+    "GOB-02b": { "vote": "APROBAR", "justification": "Cumple el criterio comercial simulado.", "norm_refs": ["MANUAL/CODIGOS/CODIGO_COMERCIAL.md"], "issued_at": "2026-07-23T12:00:01Z", "sealed": true, "saw_other_votes": false },
+    "GOB-02c": { "vote": "APROBAR", "justification": "Cumple el criterio de calidad simulado.", "norm_refs": ["MANUAL/CODIGOS/CODIGO_CALIDAD.md"], "issued_at": "2026-07-23T12:00:02Z", "sealed": true, "saw_other_votes": false },
+    "GOB-02d": { "vote": "APROBAR", "justification": "Cumple el criterio técnico simulado.", "norm_refs": ["MANUAL/CODIGOS/CODIGO_SEGURIDAD.md"], "issued_at": "2026-07-23T12:00:03Z", "sealed": true, "saw_other_votes": false }
+  },
+  "consolidation": { "approve_count": 4, "non_approve_count": 0, "result": "APROBAR", "dissent": false, "requires_human_review": true, "rule": "4-0" },
+  "human_approval": { "required": true, "status": "PENDIENTE", "decision_ref": null },
+  "audit_ref": "AUD-EJEMPLO-4-0"
+}

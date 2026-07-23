@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "simulation": true,
+  "convocation_id": "CONV-2-2",
+  "project_id": "PID-20260723-T001",
+  "dossier_ref": "EJEMPLO/dossier-v1",
+  "dossier_hash": "sha256:ejemplo-2-2",
+  "gate": "GR-3",
+  "votes": {
+    "GOB-02a": { "vote": "APROBAR", "justification": "Perspectiva editorial favorable simulada.", "norm_refs": ["MANUAL/CODIGOS/CODIGO_ESTILO.md"], "issued_at": "2026-07-23T12:02:00Z", "sealed": true, "saw_other_votes": false },
+    "GOB-02b": { "vote": "RECHAZAR", "justification": "Riesgo comercial no reparable en esta ronda simulada.", "norm_refs": ["MANUAL/CODIGOS/CODIGO_COMERCIAL.md"], "issued_at": "2026-07-23T12:02:01Z", "sealed": true, "saw_other_votes": false },
+    "GOB-02c": { "vote": "REQUIERE_CAMBIOS", "justification": "Defecto de calidad reparable simulado.", "norm_refs": ["MANUAL/CODIGOS/CODIGO_CALIDAD.md"], "issued_at": "2026-07-23T12:02:02Z", "sealed": true, "saw_other_votes": false },
+    "GOB-02d": { "vote": "APROBAR", "justification": "Perspectiva técnica favorable simulada.", "norm_refs": ["MANUAL/CODIGOS/CODIGO_SEGURIDAD.md"], "issued_at": "2026-07-23T12:02:03Z", "sealed": true, "saw_other_votes": false }
+  },
+  "consolidation": { "approve_count": 2, "non_approve_count": 2, "result": "REQUIERE_CAMBIOS", "dissent": true, "requires_human_review": true, "rule": "2-2" },
+  "human_approval": { "required": true, "status": "PENDIENTE", "decision_ref": null },
+  "audit_ref": "AUD-EJEMPLO-2-2"
+}

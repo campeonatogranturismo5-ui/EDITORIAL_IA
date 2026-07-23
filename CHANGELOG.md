@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## 2026-07-23 — Capa documental de Gobierno
+
+- Desarrolladas las fichas completas de `GOB-01`, `GOB-02a` a `GOB-02d` y `GOB-03`.
+- Definida la votación independiente del Consejo con resultados `APROBAR`, `RECHAZAR` y `REQUIERE_CAMBIOS`.
+- Resuelta documentalmente la consolidación 4-0, 3-1, 2-2, 1-3 y 0-4 mediante `ADR-0003`.
+- Añadidos esquema JSON, checklist, cinco ejemplos sintéticos y pruebas reproducibles.
+- Conservada la aprobación humana obligatoria en GR-1 a GR-4.
+- No se han conectado modelos de IA ni implementado el bus de eventos.
+
 ## 2026-07-23 — Plantilla y contratos comunes
 
 - Desarrollada la plantilla única de agentes con 33 secciones obligatorias.

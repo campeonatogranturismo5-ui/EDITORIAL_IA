@@ -79,14 +79,15 @@ Hay 41 roles conceptuales. Al sustituir el rol compuesto `GOB-02` por cuatro mie
 | SUP-40 | Curador de Memoria | Extraer patrones y proponer entradas |
 | SUP-41 | Agente de Aprendizaje | Proponer mejoras respaldadas por evidencia |
 
-El Consejo se materializa en `GOB-02a` Director Editorial, `GOB-02b` Marketing, `GOB-02c` Calidad y `GOB-02d` Técnico. Sus fichas detalladas permanecen `PENDIENTE` hasta las fases autorizadas de agentes.
+El Consejo se materializa en `GOB-02a` Director Editorial, `GOB-02b` Marketing, `GOB-02c` Calidad y `GOB-02d` Técnico. Sus fichas están definidas documentalmente en `../AGENTS/GOB/` y permanecen `NO_IMPLEMENTADO` técnicamente.
 
 ## Gobierno
 
 - `GOB-01` mantiene estado, despacha tareas, gestiona reintentos y convoca votaciones.
 - `GOB-02a-d` evalúan catálogo, mercado, calidad y técnica.
-- `GOB-03` audita una muestra aleatoria del 20 % y calcula el ICE.
+- `GOB-03` audita una muestra aleatoria reproducible del 20 %; solo calculará el ICE cuando exista una fórmula aprobada.
 - GR-1 a GR-4 conservan aprobación humana.
+- La votación independiente y su consolidación se definen en `REGISTRO_DECISIONES/ADR-0003-votacion-consejo-editorial.md`.
 
 ## Operación
 
@@ -153,16 +154,16 @@ Todas estas capacidades están `NO_IMPLEMENTADO`.
 ## Contradicciones que requieren decisión
 
 1. GR-1 después de `IDEA` o después de `INVESTIGACION`.
-2. Devolución o escalado humano en 2-2.
-3. Tres valores de voto sin matriz completa de consolidación.
-4. Capa editorial declarada como 18 aunque contiene 19 roles.
-5. 41 roles frente a 44 perfiles.
-6. `kebab-case` frente a nombres canónicos en mayúsculas y guiones bajos.
-7. `REGISTRO_DECISIONES.md` frente a directorio de ADR.
-8. `MEMORIA_EDITORIAL/` frente a `MEMORIA/`.
-9. Diez estados frente a nueve fases.
-10. Fórmula del ICE ausente.
-11. Contenido E1-E5, recuperación, versionado y gobernanza remitido a v1.0 no disponible.
+2. Capa editorial declarada como 18 aunque contiene 19 roles.
+3. 41 roles frente a 44 perfiles.
+4. `kebab-case` frente a nombres canónicos en mayúsculas y guiones bajos.
+5. `REGISTRO_DECISIONES.md` frente a directorio de ADR.
+6. `MEMORIA_EDITORIAL/` frente a `MEMORIA/`.
+7. Diez estados frente a nueve fases.
+8. Fórmula del ICE ausente.
+9. Contenido E1-E5, recuperación, versionado y gobernanza remitido a v1.0 no disponible.
+
+La devolución y el escalado en 2-2, junto con la matriz completa de consolidación, quedaron resueltos para simulación documental mediante `ADR-0003`.
 12. APIs comerciales y permisos no validados.
 13. El documento declara siete Códigos, pero solo enumera seis archivos de Código.
 

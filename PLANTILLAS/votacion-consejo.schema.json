@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://editorial-ia.invalid/schemas/votacion-consejo.schema.json",
+  "title": "Registro documental de votación del Consejo Editorial",
+  "description": "Esquema para una votación simulada e independiente de GOB-02a a GOB-02d. No representa ejecución automática.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "simulation",
+    "convocation_id",
+    "project_id",
+    "dossier_ref",
+    "dossier_hash",
+    "gate",
+    "votes",
+    "consolidation",
+    "human_approval",
+    "audit_ref"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "simulation": { "const": true },
+    "convocation_id": { "type": "string", "minLength": 1 },
+    "project_id": { "type": "string", "pattern": "^PID-[A-Z0-9]{8}-[A-Z0-9]{4}$" },
+    "dossier_ref": { "type": "string", "minLength": 1 },
+    "dossier_hash": { "type": "string", "minLength": 1 },
+    "gate": { "enum": ["GR-1", "GR-2", "GR-3", "GR-4", "NO_APLICA"] },
+    "votes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["GOB-02a", "GOB-02b", "GOB-02c", "GOB-02d"],
+      "properties": {
+        "GOB-02a": { "$ref": "#/$defs/vote" },
+        "GOB-02b": { "$ref": "#/$defs/vote" },
+        "GOB-02c": { "$ref": "#/$defs/vote" },
+        "GOB-02d": { "$ref": "#/$defs/vote" }
+      }
+    },
+    "consolidation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approve_count", "non_approve_count", "result", "dissent", "requires_human_review", "rule"],
+      "properties": {
+        "approve_count": { "type": "integer", "minimum": 0, "maximum": 4 },
+        "non_approve_count": { "type": "integer", "minimum": 0, "maximum": 4 },
+        "result": { "enum": ["APROBAR", "RECHAZAR", "REQUIERE_CAMBIOS"] },
+        "dissent": { "type": "boolean" },
+        "requires_human_review": { "type": "boolean" },
+        "rule": { "enum": ["4-0", "3-1", "2-2", "1-3", "0-4"] }
+      }
+    },
+    "human_approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "status", "decision_ref"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "status": { "enum": ["NO_APLICA", "PENDIENTE", "APROBADO", "RECHAZADO"] },
+        "decision_ref": { "type": ["string", "null"] }
+      }
+    },
+    "audit_ref": { "type": "string", "minLength": 1 }
+  },
+  "$defs": {
+    "vote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vote", "justification", "norm_refs", "issued_at", "sealed", "saw_other_votes"],
+      "properties": {
+        "vote": { "enum": ["APROBAR", "RECHAZAR", "REQUIERE_CAMBIOS"] },
+        "justification": { "type": "string", "minLength": 1 },
+        "norm_refs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "issued_at": { "type": "string", "format": "date-time" },
+        "sealed": { "const": true },
+        "saw_other_votes": { "const": false }
+      }
+    }
+  }
+}
