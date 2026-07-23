@@ -47,3 +47,14 @@ Consejo Editorial y responsable humano del proyecto.
 - [Estado del proyecto](ESTADO_PROYECTO.md)
 - [Registro de cambios](CHANGELOG.md)
 - [Documento maestro](DOCUMENTACION_FUENTE/arquitectura-editorial-ia-v2.docx)
+
+### Contratos de agentes
+
+- [Plantilla única](AGENTS/_TEMPLATE/AGENT_TEMPLATE.md)
+- [Contrato de entrada](PLANTILLAS/contrato-entrada-agente.md)
+- [Contrato de salida](PLANTILLAS/contrato-salida-agente.md)
+- [Informe de rechazo](PLANTILLAS/informe-rechazo.md)
+- [Informe de error](PLANTILLAS/informe-error.md)
+- [Registro de decisión](PLANTILLAS/registro-decision.md)
+- [Checklist común](PLANTILLAS/checklist-agente.md)
+- [ADR-0002](MANUAL/REGISTRO_DECISIONES/ADR-0002-plantilla-unica-agentes.md)

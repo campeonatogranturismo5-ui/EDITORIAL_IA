@@ -1,8 +1,8 @@
 # Estado del proyecto
 
 - **Fecha:** 2026-07-23
-- **Fase actual:** descomposición documental de la arquitectura v2.0
-- **Estado:** `DEFINIDO_CON_PENDIENTES`
+- **Fase actual:** plantilla única y contratos comunes de agentes
+- **Estado:** `DEFINIDO`
 - **Fuente:** `DOCUMENTACION_FUENTE/arquitectura-editorial-ia-v2.docx`
 - **Responsable de aprobación:** responsable humano
 
@@ -17,6 +17,9 @@
 - Constitución, seis Códigos enumerados, Glosario y Arquitectura del Sistema desarrollados.
 - Cinco documentos de Memoria inicializados sin entradas no respaldadas.
 - Informe de descomposición e índice documental creados.
+- Plantilla única de agentes y seis contratos/plantillas comunes desarrollados.
+- Decisión registrada en `ADR-0002`.
+- Pruebas documentales de completitud definidas.
 
 ## No implementado
 
@@ -37,4 +40,4 @@
 
 ## Próxima fase autorizable
 
-Creación de la plantilla única de agentes y contratos comunes. No iniciada.
+Definición documental de los agentes de Gobierno. No iniciada.

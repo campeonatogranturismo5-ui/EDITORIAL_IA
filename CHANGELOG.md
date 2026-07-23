@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## 2026-07-23 — Plantilla y contratos comunes
+
+- Desarrollada la plantilla única de agentes con 33 secciones obligatorias.
+- Añadidos contratos de entrada y salida.
+- Añadidas plantillas de rechazo, error, decisión y checklist.
+- Documentada la decisión en `ADR-0002`.
+- Añadidas pruebas documentales de completitud, ausencia, duplicación, vacío, reintentos y escalado.
+- No se han desarrollado las fichas de los 41 roles ni se ha implementado ningún agente.
+
 ## 2026-07-23 — Descomposición de la arquitectura v2.0
 
 - Migrados misión, visión, principios, objetivos, normas, flujos, calidad, seguridad disponible, aprendizaje y reglas comerciales.
