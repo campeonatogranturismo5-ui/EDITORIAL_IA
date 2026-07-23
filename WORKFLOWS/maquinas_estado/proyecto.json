@@ -1,0 +1,8 @@
+{
+  "titulo": "Máquina de estados del proyecto",
+  "finalidad": "Definir estados y transiciones del ciclo editorial",
+  "estado": "PENDIENTE",
+  "fuente": "arquitectura-editorial-ia-v2.docx",
+  "responsable_futuro": "GOB-01 Orquestador Maestro"
+}
+

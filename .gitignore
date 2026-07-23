@@ -1,0 +1,27 @@
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Sistemas operativos y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Artefactos temporales
+tmp/
+temp/
+*.log
+
