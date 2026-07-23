@@ -1,5 +1,16 @@
 # Registro de cambios
 
+## 2026-07-23 — Descomposición de la arquitectura v2.0
+
+- Migrados misión, visión, principios, objetivos, normas, flujos, calidad, seguridad disponible, aprendizaje y reglas comerciales.
+- Desarrollados la Constitución, los seis Códigos enumerados, el Glosario y la Arquitectura del Sistema.
+- Inicializados los cinco documentos de Memoria sin inventar entradas.
+- Añadidos metadatos de versión, fecha, estado, fuente y responsable.
+- Añadido un índice documental al `README.md`.
+- Generado `INFORMES/informe-descomposicion-arquitectura-v2.md`.
+- Marcadas como pendientes las secciones que dependen de v1.0 y las contradicciones de la fuente.
+- No se han desarrollado prompts, agentes ejecutables ni automatizaciones.
+
 ## 2026-07-23 — Instrucciones AGENTS para Codex
 
 - Añadido `AGENTS.md` en la raíz con propósito, jerarquía, reglas, convenciones, comprobaciones e informe final.

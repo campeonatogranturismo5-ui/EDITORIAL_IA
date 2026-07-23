@@ -1,8 +1,8 @@
 # Estado del proyecto
 
 - **Fecha:** 2026-07-23
-- **Fase actual:** instrucciones de gobierno para Codex
-- **Estado:** `DEFINIDO`
+- **Fase actual:** descomposición documental de la arquitectura v2.0
+- **Estado:** `DEFINIDO_CON_PENDIENTES`
 - **Fuente:** `DOCUMENTACION_FUENTE/arquitectura-editorial-ia-v2.docx`
 - **Responsable de aprobación:** responsable humano
 
@@ -14,6 +14,9 @@
 - Fichas de agentes creadas únicamente como marcadores documentales pendientes.
 - `AGENTS.md` raíz y ocho instrucciones locales creados.
 - Jerarquía de autoridad documentada en `ADR-0001`.
+- Constitución, seis Códigos enumerados, Glosario y Arquitectura del Sistema desarrollados.
+- Cinco documentos de Memoria inicializados sin entradas no respaldadas.
+- Informe de descomposición e índice documental creados.
 
 ## No implementado
 
@@ -34,4 +37,4 @@
 
 ## Próxima fase autorizable
 
-Descomposición del documento maestro en documentación Markdown mantenible. No iniciada.
+Creación de la plantilla única de agentes y contratos comunes. No iniciada.
