@@ -44,6 +44,7 @@ Consejo Editorial y responsable humano del proyecto.
 ### Seguimiento
 
 - [Informe de descomposición](INFORMES/informe-descomposicion-arquitectura-v2.md)
+- [Auditoría de la fase inicial](INFORMES/AUDITORIA_FASE_INICIAL.md)
 - [Estado del proyecto](ESTADO_PROYECTO.md)
 - [Registro de cambios](CHANGELOG.md)
 - [Documento maestro](DOCUMENTACION_FUENTE/arquitectura-editorial-ia-v2.docx)

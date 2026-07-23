@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## 2026-07-23 — Auditoría integral de la base inicial
+
+- Auditados 221 archivos versionados y los 17 ámbitos exigidos por el paso 8.
+- Verificados enlaces, nombres, numeración, estados, plantilla, puertas humanas, votación, trazabilidad, versionado, secretos, duplicados y piloto.
+- Corregidas dos inconsistencias documentales menores sin cambiar arquitectura.
+- Pruebas superadas: plantilla 33/33, Consejo 5/5 y piloto 11/11.
+- Emitida la conclusión `APTO_CON_CORRECCIONES`.
+- No se implementaron funciones ni fases posteriores.
+
 ## 2026-07-23 — Proyecto piloto documental
 
 - Creado `PID-PILOTO-001` con estado persistido `IDEA`.

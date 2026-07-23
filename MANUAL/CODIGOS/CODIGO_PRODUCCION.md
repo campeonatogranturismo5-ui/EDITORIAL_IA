@@ -64,14 +64,14 @@ Los miembros `GOB-02a` a `GOB-02d` votan independientemente:
 - `RECHAZAR`
 - `REQUIERE_CAMBIOS`
 
-Reglas expresadas por la fuente:
+Reglas expresadas por la fuente y consolidadas para simulación documental mediante [`ADR-0003`](../REGISTRO_DECISIONES/ADR-0003-votacion-consejo-editorial.md):
 
-- 4 aprobaciones: pasa a revisión humana.
-- 3 aprobaciones: pasa con disidencia.
-- 2 aprobaciones: la fuente alterna entre devolución y escalado por empate.
-- 0 o 1 aprobación: devolución e incidente E5.
+- 4 aprobaciones: `APROBAR`; pasa a revisión humana cuando exista GR.
+- 3 aprobaciones: `APROBAR` con disidencia.
+- 2 aprobaciones: `REQUIERE_CAMBIOS`, devolución y escalado humano.
+- 0 o 1 aprobación: `RECHAZAR`, devolución e incidente E5 documental.
 
-La consolidación de combinaciones con tres valores, especialmente 2-2, queda `PENDIENTE_DE_VALIDACION`.
+Los votos no aprobatorios conservan individualmente `RECHAZAR` o `REQUIERE_CAMBIOS`. Esta resolución no altera la posición de GR-1, que continúa `PENDIENTE_DE_VALIDACION`, ni convierte la aprobación colegiada en aprobación humana.
 
 ## Secuencia general
 
@@ -103,4 +103,3 @@ El comportamiento completo del bus, recuperación de proyectos, SLA y errores E1
 ## Estado de implementación
 
 Todo este flujo está documentado, no implementado. La máquina de estados, el bus, los reintentos, los conectores y la publicación son `NO_IMPLEMENTADO`.
-

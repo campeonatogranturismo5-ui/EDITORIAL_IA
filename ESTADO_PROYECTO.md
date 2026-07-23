@@ -1,8 +1,8 @@
 # Estado del proyecto
 
 - **Fecha:** 2026-07-23
-- **Fase actual:** proyecto piloto documental
-- **Estado:** `DEFINIDO`
+- **Fase actual:** auditoría de la base inicial
+- **Estado:** `APTO_CON_CORRECCIONES`
 - **Fuente:** `DOCUMENTACION_FUENTE/arquitectura-editorial-ia-v2.docx`
 - **Responsable de aprobación:** responsable humano
 
@@ -11,7 +11,7 @@
 - Estructura principal y subcarpetas inicializadas.
 - Documento maestro incorporado.
 - Inventario inicial creado.
-- Fichas de agentes creadas únicamente como marcadores documentales pendientes.
+- Marcadores documentales creados para los 44 perfiles; los seis perfiles de Gobierno fueron desarrollados posteriormente y los 38 restantes siguen pendientes.
 - `AGENTS.md` raíz y ocho instrucciones locales creados.
 - Jerarquía de autoridad documentada en `ADR-0001`.
 - Constitución, seis Códigos enumerados, Glosario y Arquitectura del Sistema desarrollados.
@@ -28,6 +28,9 @@
 - Once áreas, metadatos internos, trazabilidad y checkpoints del piloto inicializados.
 - Flujo manual validado mediante 11 pruebas de integración superadas.
 - Versionado sin sobrescritura y rollback por checkpoints comprobados documentalmente.
+- Auditoría integral de los 17 ámbitos completada.
+- Enlaces, JSON, numeración, plantilla, secretos, duplicados y estado real verificados.
+- Conclusión de auditoría: `APTO_CON_CORRECCIONES`.
 
 ## No implementado
 
@@ -48,4 +51,4 @@
 
 ## Próxima fase autorizable
 
-La siguiente fase no está autorizada en este paso. La automatización real permanece prohibida.
+Solo trabajo documental expresamente aprobado y resolución de hallazgos. La automatización real permanece prohibida.
