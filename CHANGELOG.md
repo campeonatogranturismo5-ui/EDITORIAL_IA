@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## 2026-07-23 — Proyecto piloto documental
+
+- Creado `PID-PILOTO-001` con estado persistido `IDEA`.
+- Añadidas las once áreas del expediente, metadatos, log, decisiones, riesgos y checkpoints.
+- Creados artefactos sintéticos mínimos y versiones coexistentes sin contenido publicable.
+- Añadidas once pruebas de integración para transiciones, artefactos, puertas humanas, rechazo, reintentos, auditoría, versionado y rollback.
+- Resultado de integración: 11 pruebas superadas y 0 fallidas.
+- No se implementó automatización real, publicación, modelo de IA ni bus de eventos.
+
 ## 2026-07-23 — Capa documental de Gobierno
 
 - Desarrolladas las fichas completas de `GOB-01`, `GOB-02a` a `GOB-02d` y `GOB-03`.

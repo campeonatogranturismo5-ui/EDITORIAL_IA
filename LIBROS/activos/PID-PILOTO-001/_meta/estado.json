@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "project_id": "PID-PILOTO-001",
+  "synthetic_id_exception": true,
+  "simulation": true,
+  "publishable": false,
+  "initial_state": "IDEA",
+  "current_state": "IDEA",
+  "revision": 1,
+  "updated_at": "2026-07-23T00:00:00+02:00",
+  "allowed_states": [
+    "IDEA",
+    "INVESTIGACION",
+    "ARQUITECTURA",
+    "CREACION_ASSETS",
+    "REDACCION",
+    "EDICION",
+    "PRODUCCION",
+    "PUBLICACION",
+    "POSTPUBLICACION",
+    "ARCHIVADO"
+  ],
+  "required_artifacts": {
+    "IDEA": ["brief/brief_v01.md", "investigacion/viabilidad_v01.md"],
+    "INVESTIGACION": ["investigacion/mercado_v01.md", "investigacion/lectores_v01.md", "investigacion/competencia_v01.md"],
+    "ARQUITECTURA": ["arquitectura/indice_v01.md", "arquitectura/ficha_capitulos_v01.md", "arquitectura/estilo_v01.md"],
+    "CREACION_ASSETS": ["assets_creativos/manifest_v01.md"],
+    "REDACCION": ["manuscrito/ms_capitulo_01_v01.md"],
+    "EDICION": ["edicion/ms_editado_v01.md", "edicion/informe_edicion_v01.md"],
+    "PRODUCCION": ["produccion/manifest_paquete_v01.md"],
+    "PUBLICACION": ["publicacion/metadatos_v01.md", "publicacion/landing_v01.md", "publicacion/promocion_v01.md"],
+    "POSTPUBLICACION": ["postpublicacion/informe_tecnico_30d_v01.md", "postpublicacion/informe_comercial_90d_v01.md", "postpublicacion/lecciones_v01.md"]
+  },
+  "human_gates": {
+    "GR-1": { "position": "PENDIENTE_DE_VALIDACION", "required": true, "rejection_target": "PENDIENTE_DE_VALIDACION" },
+    "GR-2": { "after": "CREACION_ASSETS", "required": true, "rejection_target": "ARQUITECTURA" },
+    "GR-3": { "after": "EDICION", "required": true, "rejection_target": "REDACCION" },
+    "GR-4": { "after": "PRODUCCION", "required": true, "rejection_target": "PRODUCCION" }
+  },
+  "max_retries": 3,
+  "checkpoint_ref": "checkpoints/CP-000-IDEA.json",
+  "audit_ref": "log.md"
+}

@@ -1,0 +1,12 @@
+{
+  "checkpoint_id": "CP-001-SIMULADO",
+  "project_id": "PID-PILOTO-001",
+  "simulation": true,
+  "state": "ARQUITECTURA",
+  "revision": 2,
+  "created_at": "2026-07-23T00:02:00+02:00",
+  "previous_checkpoint": "CP-000",
+  "artifact_manifest": ["arquitectura/indice_v01.md", "arquitectura/ficha_capitulos_v01.md", "arquitectura/estilo_v01.md"],
+  "restore_target": "CP-000",
+  "note": "Fixture de rollback; no modifica el estado persistido."
+}

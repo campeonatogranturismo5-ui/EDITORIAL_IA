@@ -1,7 +1,7 @@
 # Estado del proyecto
 
 - **Fecha:** 2026-07-23
-- **Fase actual:** definición documental de agentes de Gobierno
+- **Fase actual:** proyecto piloto documental
 - **Estado:** `DEFINIDO`
 - **Fuente:** `DOCUMENTACION_FUENTE/arquitectura-editorial-ia-v2.docx`
 - **Responsable de aprobación:** responsable humano
@@ -24,6 +24,10 @@
 - Votación del Consejo, matriz de consolidación y conservación de GR-1 a GR-4 definidas.
 - Esquema JSON, checklist, cinco ejemplos y pruebas documentales de votación añadidos.
 - Decisión de consolidación registrada en `ADR-0003`.
+- Proyecto sintético `PID-PILOTO-001` creado con estado persistido `IDEA`.
+- Once áreas, metadatos internos, trazabilidad y checkpoints del piloto inicializados.
+- Flujo manual validado mediante 11 pruebas de integración superadas.
+- Versionado sin sobrescritura y rollback por checkpoints comprobados documentalmente.
 
 ## No implementado
 
@@ -44,4 +48,4 @@
 
 ## Próxima fase autorizable
 
-Proyecto piloto documental `PID-PILOTO-001`. No iniciado.
+La siguiente fase no está autorizada en este paso. La automatización real permanece prohibida.

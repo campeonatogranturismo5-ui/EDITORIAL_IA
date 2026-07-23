@@ -68,3 +68,10 @@ Consejo Editorial y responsable humano del proyecto.
 - [Checklist de votación](CHECKLISTS/GOB-02_votacion.md)
 - [ADR-0003](MANUAL/REGISTRO_DECISIONES/ADR-0003-votacion-consejo-editorial.md)
 - [Informe del paso 6](INFORMES/informe-agentes-gobierno.md)
+
+### Proyecto piloto
+
+- [PID-PILOTO-001](LIBROS/activos/PID-PILOTO-001/README.md)
+- [Estado inicial](LIBROS/activos/PID-PILOTO-001/_meta/estado.json)
+- [Pruebas de integración](TEST/integracion/proyecto-piloto/casos.md)
+- [Informe del piloto](INFORMES/informe-prueba-piloto-001.md)
