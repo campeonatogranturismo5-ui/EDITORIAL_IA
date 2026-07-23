@@ -31,6 +31,10 @@
 | `RECURSOS/` | Tipografías, paletas, stock y mercado | Recursos editoriales | Vacío | Licencias y proveedores | Producción futura |
 | `IMAGENES/`, `PORTADAS/` | `.gitkeep` | Recursos visuales globales | Vacío | Proyectos futuros | Producción futura |
 | `.github/` | Workflows vacío y `CODEOWNERS` pendiente | CI y propiedad | No implementado | Reglas y responsables | Fase técnica |
+| `src/editorial_ia/` | Núcleo, CLI y agente sintético | Infraestructura local para agentes | Implementado | Python 3.12 y Pydantic 2 | Paso 9 |
+| `tests/` | Pruebas unitarias, integración y fixtures | Verificación automatizada del núcleo | Implementado | pytest y pytest-cov | Paso 9 |
+| `DOCUMENTACION_TECNICA/` | Guía de infraestructura de agentes | Uso, extensión y límites técnicos | Implementado | ADR-0004 | Paso 9 |
+| `AUDITORIAS/eventos/` | JSONL de ejecuciones | Evidencia local append-only | Implementado para desarrollo | Runner local | Paso 9 |
 
 ## Numeración verificada
 

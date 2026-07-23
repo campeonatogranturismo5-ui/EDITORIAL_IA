@@ -6,9 +6,12 @@ Repositorio documental y técnico para la arquitectura v2.0 de Editorial IA.
 
 ## Estado
 
-`EN_DESARROLLO_DOCUMENTAL`
+`INFRAESTRUCTURA_BASE_IMPLEMENTADA`
 
-La estructura, los contratos y las seis fichas documentales de Gobierno están definidos. Los agentes ejecutables, workflows operativos y automatizaciones todavía no están implementados.
+La estructura documental y las seis fichas de Gobierno están definidas. Existe
+una infraestructura Python local y solo el agente sintético `TEST-AGENT-001` es
+ejecutable. Los agentes de producción, workflows operativos, servicios externos y
+automatizaciones todavía no están implementados.
 
 ## Fuente
 
@@ -76,3 +79,20 @@ Consejo Editorial y responsable humano del proyecto.
 - [Estado inicial](LIBROS/activos/PID-PILOTO-001/_meta/estado.json)
 - [Pruebas de integración](TEST/integracion/proyecto-piloto/casos.md)
 - [Informe del piloto](INFORMES/informe-prueba-piloto-001.md)
+
+### Infraestructura técnica de agentes
+
+- [Guía técnica](DOCUMENTACION_TECNICA/infraestructura-agentes.md)
+- [ADR-0004](MANUAL/REGISTRO_DECISIONES/ADR-0004-infraestructura-base-agentes.md)
+- [Informe del paso 9](INFORMES/informe-paso-09-infraestructura-agentes.md)
+- [Código fuente](src/editorial_ia/)
+- [Pruebas automatizadas](tests/)
+- [Eventos de auditoría](AUDITORIAS/eventos/)
+
+## Inicio rápido
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
+.\.venv\Scripts\editorial-ia.exe run --agent TEST-AGENT-001 --project PID-PILOTO-001 --input "Prueba de infraestructura"
+```

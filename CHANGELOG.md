@@ -1,5 +1,15 @@
 # Registro de cambios
 
+## 2026-07-23 — Infraestructura base para agentes
+
+- Creado el paquete Python `editorial_ia` con contratos Pydantic y contexto trazable.
+- Añadidos registro explícito, runner síncrono, reintentos, timeout lógico y errores estructurados.
+- Añadida auditoría JSONL append-only con checksum y enmascaramiento de secretos.
+- Añadida CLI y el único agente ejecutable `TEST-AGENT-001`.
+- Añadidas 37 pruebas automatizadas; todas superadas con 91,91 % de cobertura.
+- Registrada la decisión técnica en `ADR-0004`.
+- No se implementaron agentes de producción ni integraciones externas.
+
 ## 2026-07-23 — Auditoría integral de la base inicial
 
 - Auditados 221 archivos versionados y los 17 ámbitos exigidos por el paso 8.

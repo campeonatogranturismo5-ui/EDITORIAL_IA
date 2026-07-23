@@ -16,6 +16,10 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Node
 node_modules/
@@ -24,4 +28,3 @@ node_modules/
 tmp/
 temp/
 *.log
-

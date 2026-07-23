@@ -1,8 +1,8 @@
 # Estado del proyecto
 
 - **Fecha:** 2026-07-23
-- **Fase actual:** auditoría de la base inicial
-- **Estado:** `APTO_CON_CORRECCIONES`
+- **Fase actual:** infraestructura base para agentes
+- **Estado:** `INFRAESTRUCTURA_BASE_IMPLEMENTADA`
 - **Fuente:** `DOCUMENTACION_FUENTE/arquitectura-editorial-ia-v2.docx`
 - **Responsable de aprobación:** responsable humano
 
@@ -31,11 +31,17 @@
 - Auditoría integral de los 17 ámbitos completada.
 - Enlaces, JSON, numeración, plantilla, secretos, duplicados y estado real verificados.
 - Conclusión de auditoría: `APTO_CON_CORRECCIONES`.
+- Paquete Python local, contratos, contexto y registro explícito implementados.
+- Runner síncrono con reintentos, timeout lógico y resultados estructurados implementado.
+- Auditoría JSONL append-only con checksum y redacción de secretos implementada.
+- CLI y agente sintético `TEST-AGENT-001` implementados.
+- 37 pruebas automatizadas superadas con 91,91 % de cobertura.
+- Decisión técnica registrada en `ADR-0004`.
 
 ## No implementado
 
 - Contenido definitivo del Manual y la Memoria.
-- Agentes ejecutables.
+- Agentes ejecutables de producción; solo existe `TEST-AGENT-001`.
 - Prompts.
 - Máquina de estados.
 - Scripts y automatizaciones.
@@ -51,4 +57,6 @@
 
 ## Próxima fase autorizable
 
-Solo trabajo documental expresamente aprobado y resolución de hallazgos. La automatización real permanece prohibida.
+Definir la máquina de estados y el contrato local de orquestación en un paso
+posterior expresamente autorizado. La automatización real y los agentes de
+producción permanecen fuera de alcance.
