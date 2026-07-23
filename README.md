@@ -6,9 +6,9 @@ Repositorio documental y técnico para la arquitectura v2.0 de Editorial IA.
 
 ## Estado
 
-`PENDIENTE`
+`EN_DESARROLLO_DOCUMENTAL`
 
-En esta fase solo se ha creado la estructura inicial. Los agentes, workflows, scripts y automatizaciones todavía no están implementados.
+La estructura inicial y las instrucciones de gobierno para Codex están definidas. Los agentes, workflows, scripts y automatizaciones todavía no están implementados.
 
 ## Fuente
 
@@ -17,4 +17,3 @@ En esta fase solo se ha creado la estructura inicial. Los agentes, workflows, sc
 ## Responsable futuro
 
 Consejo Editorial y responsable humano del proyecto.
-

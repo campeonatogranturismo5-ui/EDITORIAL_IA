@@ -1,8 +1,8 @@
 # Estado del proyecto
 
 - **Fecha:** 2026-07-23
-- **Fase actual:** estructura inicial
-- **Estado:** `PENDIENTE_DE_VALIDACION`
+- **Fase actual:** instrucciones de gobierno para Codex
+- **Estado:** `DEFINIDO`
 - **Fuente:** `DOCUMENTACION_FUENTE/arquitectura-editorial-ia-v2.docx`
 - **Responsable de aprobación:** responsable humano
 
@@ -12,6 +12,8 @@
 - Documento maestro incorporado.
 - Inventario inicial creado.
 - Fichas de agentes creadas únicamente como marcadores documentales pendientes.
+- `AGENTS.md` raíz y ocho instrucciones locales creados.
+- Jerarquía de autoridad documentada en `ADR-0001`.
 
 ## No implementado
 
@@ -32,4 +34,4 @@
 
 ## Próxima fase autorizable
 
-Creación de las instrucciones `AGENTS.md`. No iniciada.
+Descomposición del documento maestro en documentación Markdown mantenible. No iniciada.
